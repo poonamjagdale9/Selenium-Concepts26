@@ -11,10 +11,11 @@ import java.util.List;
 public class Locators {
     public static void main(String args[]){
         WebDriver driver = new ChromeDriver();
-        driver.get("https://www.ebay.com/");
+       // driver.get("https://www.ebay.com/");
+        driver.get("https://demoblaze.com");
         driver.manage().window().maximize();
 
-        // By ID
+      /*  // By ID
         driver.findElement(By.id("gh-ac")).sendKeys("MAc");
         boolean logoStatus = driver.findElement(By.id("gh-logo")).isDisplayed();
         System.out.println(logoStatus);
@@ -25,6 +26,15 @@ public class Locators {
 
         //Linktext or partial linktext
         driver.findElement(By.linkText("eBay Live")).click();
+
+        // tagname to identify group of elements a (anchor tag) is always refer to tag link
+        List<WebElement> alltheLinks = driver.findElements(By.tagName("a"));
+        System.out.println("total number of links on the page:" + alltheLinks.size());
+
+        List<WebElement>images = driver.findElements(By.tagName("img"));
+        System.out.println("All image count on the page is: "+ images.size());*/
+
+        //https://demoblaze.com
 
 
 
