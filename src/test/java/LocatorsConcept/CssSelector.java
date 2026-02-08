@@ -22,8 +22,11 @@ public class CssSelector {
         // we can find elements without tag name also
         driver.findElement(By.cssSelector("#small-searchterms")).sendKeys("T-shirts");*/
 
-        //tag and a class
-        
+        //tag and a class - if class name is lenthy we can remove half part
+        // tag with class we use dor(.)
+        driver.findElement(By.cssSelector("input.search-box-text")).sendKeys("T-shirt");
+        driver.findElement(By.cssSelector(".search-box-text")).sendKeys("T-shirt");
+
 
     }
 }
