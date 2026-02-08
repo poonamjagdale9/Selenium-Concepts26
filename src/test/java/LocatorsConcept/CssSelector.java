@@ -24,8 +24,12 @@ public class CssSelector {
 
         //tag and a class - if class name is lenthy we can remove half part
         // tag with class we use dor(.)
-        driver.findElement(By.cssSelector("input.search-box-text")).sendKeys("T-shirt");
-        driver.findElement(By.cssSelector(".search-box-text")).sendKeys("T-shirt");
+       /* driver.findElement(By.cssSelector("input.search-box-text")).sendKeys("T-shirt");
+        driver.findElement(By.cssSelector(".search-box-text")).sendKeys("T-shirt");*/
+
+        //tag and Attribute - Syntax- tag attribute tag[attribute ="value"]
+        //placeholder="Search store"
+        driver.findElement(By.cssSelector("input[placeholder=\"Search store\"]")).sendKeys("T-shirt");
 
 
     }
