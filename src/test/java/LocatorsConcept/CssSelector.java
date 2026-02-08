@@ -16,7 +16,14 @@ public class CssSelector {
         WebDriver driver = new ChromeDriver();
         driver.get("https:demo.nopcommerce.com");
         driver.manage().window().maximize();
-        driver.findElement(By.cssSelector("input#small-searchterms")).sendKeys("T-shirts");
+
+        // Tag with ID
+        /*driver.findElement(By.cssSelector("input#small-searchterms")).sendKeys("T-shirts");
+        // we can find elements without tag name also
+        driver.findElement(By.cssSelector("#small-searchterms")).sendKeys("T-shirts");*/
+
+        //tag and a class
+        
 
     }
 }
