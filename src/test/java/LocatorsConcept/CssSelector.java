@@ -29,8 +29,13 @@ public class CssSelector {
 
         //tag and Attribute - Syntax- tag attribute tag[attribute ="value"]
         //placeholder="Search store"
-        driver.findElement(By.cssSelector("input[placeholder=\"Search store\"]")).sendKeys("T-shirt");
+       // driver.findElement(By.cssSelector("input[placeholder=\"Search store\"]")).sendKeys("T-shirt");
 
+        //tag class and attribute
+        // class always finds group of elements so to different we need to use atrribute
+
+        driver.findElement(By.cssSelector("input.search-box-text[name='q']")).sendKeys("T-shirt");
+        driver.findElement(By.cssSelector(".search-box-text[name='q']")).sendKeys("T-shirt");
 
     }
 }
