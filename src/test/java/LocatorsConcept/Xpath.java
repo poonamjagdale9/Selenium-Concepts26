@@ -18,8 +18,16 @@ public class Xpath {
            3. Absolute xpath traverse through each node till it finds element
            Relative xpath directly jumps and find the elements by using attributes
 
-      
+
         //Xpath is address of the element on the DOM */
+
+        /* Relative xpath / Partial xpath
+        1. Automatically
+        2. Manually (own xpath)
+        Syntax
+        //tagname[@attribute='value']
+        //*[attribute='value']
+         */
 
 
     }
