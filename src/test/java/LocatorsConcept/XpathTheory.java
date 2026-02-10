@@ -1,6 +1,6 @@
 package LocatorsConcept;
 
-public class Xpath {
+public class XpathTheory {
     public static void main(String args[]){
         /* 2 types of Xpath
         // Absolute xpath (full xpath) always starts from root node
@@ -26,8 +26,13 @@ public class Xpath {
         2. Manually (own xpath)
         Syntax
         //tagname[@attribute='value']
-        //*[attribute='value']
+        //*[attribute='value']   --- mainly work with the attribute
+
+        //img[@title="Show products in category Electronics"]
+
          */
+
+
 
 
     }
