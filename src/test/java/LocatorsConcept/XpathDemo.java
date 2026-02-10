@@ -14,13 +14,24 @@ public class XpathDemo {
         //driver.findElement(By.xpath("//*[@id='small-searchterms']")).sendKeys("Mac");
 
         // Xpath with multiple attributes
-        driver.findElement(By.xpath("//input[@name='q'][@placeholder='Search store']")).sendKeys("Mac");
+       // driver.findElement(By.xpath("//input[@name='q'][@placeholder='Search store']")).sendKeys("Mac");
 
         // Xpath with 'and' 'or' operator
         // with 'and' operator both the attributes ahould be true
-        //input[@name'q' and @placeholder='Search store']
+       //  driver.findElement(By.xpath("//input[@name='q' and @id='small-searchterms']")).sendKeys("Mac");
 
          //with 'or' operator both the attributes ahould be true
-        //input[@name'q' and @placeholder='Search store']
+       // driver.findElement(By.xpath("//input[@name='q' or @id='small-searchterms']")).sendKeys("Mac");
+
+        //Xpath with inner text - by using text method
+        // //a[text() ='Computers']
+       // driver.findElement(By.xpath("//a[text() ='Computers']")).click();
+
+        // find the elements by text only without attribute or link
+        boolean displaystatus = driver.findElement(By.xpath("//h2[text()='Welcome to our store']")).isDisplayed();
+        System.out.println(displaystatus);
+        
+        String textValue = driver.findElement(By.xpath("//h2[text()='Welcome to our store']")).getText();
+        System.out.println(textValue);
     }
 }
