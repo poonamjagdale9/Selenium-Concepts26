@@ -16,5 +16,11 @@ public class XpathDemo {
         // Xpath with multiple attributes
         driver.findElement(By.xpath("//input[@name='q'][@placeholder='Search store']")).sendKeys("Mac");
 
+        // Xpath with 'and' 'or' operator
+        // with 'and' operator both the attributes ahould be true
+        //input[@name'q' and @placeholder='Search store']
+
+         //with 'or' operator both the attributes ahould be true
+        //input[@name'q' and @placeholder='Search store']
     }
 }
