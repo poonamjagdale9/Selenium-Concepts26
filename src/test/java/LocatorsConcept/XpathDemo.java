@@ -28,10 +28,17 @@ public class XpathDemo {
        // driver.findElement(By.xpath("//a[text() ='Computers']")).click();
 
         // find the elements by text only without attribute or link
-        boolean displaystatus = driver.findElement(By.xpath("//h2[text()='Welcome to our store']")).isDisplayed();
+       /* boolean displaystatus = driver.findElement(By.xpath("//h2[text()='Welcome to our store']")).isDisplayed();
         System.out.println(displaystatus);
-        
+
         String textValue = driver.findElement(By.xpath("//h2[text()='Welcome to our store']")).getText();
-        System.out.println(textValue);
+        System.out.println(textValue);*/
+
+        // Xpath with contains- will expect 2 parameter
+       // driver.findElement(By.xpath("//input[contains(@placeholder,'Sear')]")).sendKeys("Mac");
+
+        // Xpath with starts with
+        driver.findElement(By.xpath("//input[starts-with(@placeholder, 'Sea')]")).sendKeys("Mac");
+
     }
 }
