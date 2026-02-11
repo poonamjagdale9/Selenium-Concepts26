@@ -32,6 +32,22 @@ public class XpathTheory {
 
          */
 
+        // handling dynamic attributes
+        //*[id= 'start' or id='stop']
+        //*[contains(@id,'st')]
+        //*[starts-with(@id,'st')]
+
+        // name=xyz001   xyz002   xyz0003  xyz004
+        //*[contains(@name, 'xyz')]
+        //*[contains(@name,'00')]
+        //*[starts-with(@name, 'xyz')]
+
+        //name 001xyz   002xyz  003xyz
+        //*[contains(@name,'00')]
+        //*[contains(@name, 'xyz')]
+        //*[starts-with(@name, '00')]
+
+        
 
 
 
