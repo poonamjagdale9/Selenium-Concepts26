@@ -56,6 +56,11 @@ public class XpathTheory {
         // //div[@id='logo']/a/img
 
 
+        //what is different between css and xpath
+        // css can travel only in one direction where xpath can travel all the direction
+        
+
+
 
 
 
