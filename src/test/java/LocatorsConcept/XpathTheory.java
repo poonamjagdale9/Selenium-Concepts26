@@ -58,7 +58,10 @@ public class XpathTheory {
 
         //what is different between css and xpath
         // css can travel only in one direction where xpath can travel all the direction
-        
+
+        // travers to Parent
+        //input[@id='txtUsername']/parent::form
+        //input[@id='txtUsername']/parent*
 
 
 
