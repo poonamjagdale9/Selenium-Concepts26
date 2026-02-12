@@ -47,7 +47,15 @@ public class XpathTheory {
         //*[contains(@name, 'xyz')]
         //*[starts-with(@name, '00')]
 
-        
+        // name=101xyz 201xyz 301xyz 401xyz
+        // we can use only contains
+        // //*[contains(@name, 'xyz')]
+        // //*[contains(@name, '01')]
+
+        // Chained xpath
+        // //div[@id='logo']/a/img
+
+
 
 
 

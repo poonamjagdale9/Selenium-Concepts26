@@ -38,7 +38,7 @@ public class XpathDemo {
        // driver.findElement(By.xpath("//input[contains(@placeholder,'Sear')]")).sendKeys("Mac");
 
         // Xpath with starts with
-        driver.findElement(By.xpath("//input[starts-with(@placeholder, 'Sea')]")).sendKeys("Mac");
+       // driver.findElement(By.xpath("//input[starts-with(@placeholder, 'Sea')]")).sendKeys("Mac");
 
         // handling dynamic attributes
         //*[id= 'start' or id='stop']
@@ -55,6 +55,16 @@ public class XpathDemo {
         //*[contains(@name, 'xyz')]
         //*[starts-with(@name, '00')]
 
+        // name=101xyz 201xyz 301xyz 401xyz
+        // we can use only contains
+        // //*[contains(@name, 'xyz')]
+        // //*[contains(@name, '01')]
+
+        // chained xpath
+        // //div[@id='logo']/a/img
+
+        boolean logo=driver.findElement(By.xpath("//div[@class='header-logo']/a/img")).isDisplayed();
+        System.out.println(logo);
 
 
 
