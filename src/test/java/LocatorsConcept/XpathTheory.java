@@ -63,6 +63,10 @@ public class XpathTheory {
         //input[@id='txtUsername']/parent::form
         //input[@id='txtUsername']/parent*
 
+        // Locating child elements
+        //div[@id='txtusename']/child::input
+        //div[@id='divUsername']/input
+
 
 
 
