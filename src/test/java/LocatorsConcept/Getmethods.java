@@ -38,7 +38,10 @@ public class Getmethods {
         driver.findElement(By.linkText("Facebook")).click(); // this will open new browser window
         Set<String> windows = driver.getWindowHandles(); // set collection does not allow the duplicates
         System.out.println(windows); //[969FFE120D644FA90ED3B5B97FCD8CB6, B702F0833DFDB75B9C909BFD49D0F15C]
-        //What is the use of window id's when we want to close perticular window 
+
+        //What is the use of window id's when we want to close perticular window
+        /*how to switch windows 1- driver will always focus on first window only
+        * we need window id to perform switch windows - we have few switching commands*/
 
 
     }
