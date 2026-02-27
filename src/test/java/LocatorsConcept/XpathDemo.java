@@ -69,6 +69,21 @@ public class XpathDemo {
         boolean logo=driver.findElement(By.xpath("//div[@class='header-logo']/a/img")).isDisplayed();
         System.out.println(logo);
 
+        // there are few methods we use in day to automation
+        // get methods - we can access this through webdriver methodds
+        /*get(url)
+        * get(title)
+        * getCurrentUrl()
+        * getPageSource()
+        * getPageSource()
+        * getWindowHandle() - returns id ofthe single browser window
+        *   getWindowHandles() - returns id ofthe multiple browser window     * */
+
+        // conditional methods
+        // browser methods
+        // navigational methods
+        //wait methods
+
 
 
 
