@@ -63,8 +63,12 @@ public class XpathDemo {
         // chained xpath
         // //div[@id='logo']/a/img
 
+        // xpath generation with comands in selectors hub - click on append on selectors option at corner
+        //
+
         boolean logo=driver.findElement(By.xpath("//div[@class='header-logo']/a/img")).isDisplayed();
         System.out.println(logo);
+
 
 
 
