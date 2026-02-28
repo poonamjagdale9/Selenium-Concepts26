@@ -17,12 +17,20 @@ public class ConditionalMethods {
         driver.manage().window().maximize();
 
         // when we dont use isDisplay method then it will return Webelement
-        WebElement logo1 = driver.findElement(By.xpath("//img[@alt=\"nopCommerce demo store\"]"));
+       /* WebElement logo1 = driver.findElement(By.xpath("//img[@alt=\"nopCommerce demo store\"]"));
         logo1.isDisplayed();
-        System.out.println(logo1);
-        
+        System.out.println(logo1);*/
+
         boolean logo = driver.findElement(By.xpath("//img[@alt=\"nopCommerce demo store\"]")).isDisplayed();
         System.out.println(logo);
+
+        /*isEnabled() - used for input boxes if element in in disable state
+         we can not pass any value*/
+        boolean status =driver.findElement(By.xpath("//input[@id= 'Email']")).isEnabled();
+        System.out.println("enable staus :"+ status);
+
+
+
 
 
     }
