@@ -8,6 +8,8 @@ import java.util.Set;
 
 public class Getmethods {
 
+    // get methods only work on web pages not on web elements
+
     public static void main(String args []){
         WebDriver driver = new ChromeDriver();
         // driver constructor will launch our browser with the help of get method
