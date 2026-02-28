@@ -1,4 +1,6 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ConditionalMethods {
@@ -14,7 +16,14 @@ public class ConditionalMethods {
         driver.get("https://demo.nopcommerce.com/login?returnUrl=%2F");
         driver.manage().window().maximize();
 
+        // when we dont use isDisplay method then it will return Webelement
+        WebElement logo1 = driver.findElement(By.xpath("//img[@alt=\"nopCommerce demo store\"]"));
+        logo1.isDisplayed();
+        System.out.println(logo1);
         
+        boolean logo = driver.findElement(By.xpath("//img[@alt=\"nopCommerce demo store\"]")).isDisplayed();
+        System.out.println(logo);
+
 
     }
 
