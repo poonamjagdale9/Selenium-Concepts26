@@ -35,6 +35,9 @@ public class FirstTestCase {
         if(title.equals("Google")){
             System.out.println("test pass");
         }
+        else {
+            System.out.println("test fail");
+        }
 
 
         //Second test
