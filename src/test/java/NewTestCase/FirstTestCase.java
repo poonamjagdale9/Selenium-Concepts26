@@ -32,7 +32,10 @@ public class FirstTestCase {
       driver1.close();*/
         String title= driver1.getTitle();
         System.out.println(title);
-        
+        if(title.equals("Google")){
+            System.out.println("test pass");
+        }
+
 
         //Second test
      /* driver1.get("https://demo.nopcommerce.com");
