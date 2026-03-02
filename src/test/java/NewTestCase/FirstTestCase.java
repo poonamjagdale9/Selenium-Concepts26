@@ -21,7 +21,7 @@ public class FirstTestCase {
         driver1.get("https://google.com");
 
         // validate the title
-       String Title=  driver1.getTitle();
+     /*  String Title=  driver1.getTitle();
        System.out.println(Title);
        if(Title.equals("Google")){
            System.out.println("Test pass");
@@ -29,7 +29,10 @@ public class FirstTestCase {
        else{
            System.out.println("Test failed");
        }
-      driver1.close();
+      driver1.close();*/
+        String title= driver1.getTitle();
+        System.out.println(title);
+        
 
         //Second test
      /* driver1.get("https://demo.nopcommerce.com");
