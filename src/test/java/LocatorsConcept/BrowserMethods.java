@@ -12,12 +12,23 @@ public class BrowserMethods {
     //        Quit() - close multiple browser
     //        */
 
-    public static void main(){
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://demo.nopcommerce.com/login?returnUrl=%2F");
-        driver.findElement(By.xpath("//a[@text()='Facebook']")).click();
+    public static void main(String args[]){
 
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(By.linkText("OrangeHRM, Inc")).click();
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         driver.close();
+        System.out.println();
 
     }
 }
