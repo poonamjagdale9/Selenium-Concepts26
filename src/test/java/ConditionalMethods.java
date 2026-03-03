@@ -7,8 +7,9 @@ public class ConditionalMethods {
     /*Conditional method access these commands through Webelement
     *returns boolean values true or false
     // isDisplayed - it will check element display or not
-    isEnabled() - elements disable or workig or not
+    isEnabled() - elements disable or workig or not/ operational element
     isSelected() - specially redio button and check boxex are selected or not
+    * we can use to check any box selected or not
      */
 
     public static void main(String args []){
@@ -29,6 +30,9 @@ public class ConditionalMethods {
         boolean status =driver.findElement(By.xpath("//input[@id= 'Email']")).isEnabled();
         System.out.println("enable staus :"+ status);
 
+        //isSelected
+       boolean buttonstatus = driver.findElement(By.xpath("//input[@id=\"RememberMe\"]")).isSelected();
+        System.out.println(buttonstatus);
 
 
 
