@@ -27,8 +27,7 @@ public class BrowserMethods {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        driver.close();
-        System.out.println();
-
+       // driver.close(); // drivers focus always on first browser window where driver is focused
+        driver.quit(); // will lose both the open windows by automation
     }
 }
