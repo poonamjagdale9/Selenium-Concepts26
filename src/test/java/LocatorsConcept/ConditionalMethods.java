@@ -1,3 +1,5 @@
+package LocatorsConcept;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -37,6 +39,12 @@ public class ConditionalMethods {
         driver.findElement(By.xpath("//input[@id=\"RememberMe\"]")).click();
         boolean redio_button_status1 = driver.findElement(By.xpath("//input[@id=\"RememberMe\"]")).isSelected();
         System.out.println("After selecting status of redio: " + redio_button_status1);
+
+        //Browser methods
+       /*
+        close()- close only single browser
+        Quit() - close multiple browser
+        */
 
 
 
