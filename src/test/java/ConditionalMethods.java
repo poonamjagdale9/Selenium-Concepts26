@@ -31,8 +31,12 @@ public class ConditionalMethods {
         System.out.println("enable staus :"+ status);
 
         //isSelected
-       boolean buttonstatus = driver.findElement(By.xpath("//input[@id=\"RememberMe\"]")).isSelected();
-        System.out.println(buttonstatus);
+       boolean redio_button_status = driver.findElement(By.xpath("//input[@id=\"RememberMe\"]")).isSelected();
+        System.out.println("before selecting staus of redio: " + redio_button_status);
+
+        driver.findElement(By.xpath("//input[@id=\"RememberMe\"]")).click();
+        boolean redio_button_status1 = driver.findElement(By.xpath("//input[@id=\"RememberMe\"]")).isSelected();
+        System.out.println("After selecting status of redio: " + redio_button_status1);
 
 
 
