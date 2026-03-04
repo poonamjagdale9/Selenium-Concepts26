@@ -11,6 +11,9 @@ public class SleepCommands {
          * Synchronization
          * Every wait statement has advantages and disadvantages
          * Thread.sleep - is coming from java not from Webdriver
+         * Disadvantages of thread.sleep 1.Pause the exicution 2.even though element is found before the time still
+         * excecution will wait for the given time some time element takes less time sometimes it takes more times 3.we need to write
+         * thread.sleep multiple times where ever sychronisation issue we need to write thread.sleep
          * Selenium webdriver provides only
          * 1] implicit wait
          * 2] explicit wait/fluent wait
