@@ -29,5 +29,10 @@ public class BrowserMethods {
         }
        // driver.close(); // drivers focus always on first browser window where driver is focused
         driver.quit(); // will lose both the open windows by automation
+
+
+
+
+
     }
 }
