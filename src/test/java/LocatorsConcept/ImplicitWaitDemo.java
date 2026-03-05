@@ -23,7 +23,9 @@ public class ImplicitWaitDemo {
         driver.manage().window().maximize();
         driver.findElement(By.xpath("//input[@placeholder=\"Username\"]")).sendKeys("Admin");
 
-        //driver.close();
+
+        //Explicit wait
+        
 
     }
 }
