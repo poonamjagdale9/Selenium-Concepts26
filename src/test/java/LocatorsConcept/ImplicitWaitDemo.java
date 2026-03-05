@@ -25,7 +25,7 @@ public class ImplicitWaitDemo {
 
 
         //Explicit wait
-        
+
 
     }
 }
