@@ -31,5 +31,8 @@ public class ExplicitWait {
      //   driver.findElement(By.xpath("//input[@placeholder=\"Username\"]")).sendKeys("Admin");
        // driver.close();
 
+        WebElement txtUserPSW= mywait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='Password']")));
+        txtUserPSW.sendKeys("admin123");
+
     }
 }
