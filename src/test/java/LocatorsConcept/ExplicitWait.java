@@ -31,8 +31,11 @@ public class ExplicitWait {
      //   driver.findElement(By.xpath("//input[@placeholder=\"Username\"]")).sendKeys("Admin");
        // driver.close();
 
-        WebElement txtUserPSW= mywait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='Password']")));
+       WebElement txtUserPSW= mywait.until(ExpectedConditions.visibilityOfElementLocated(By.name("password")));
         txtUserPSW.sendKeys("admin123");
+
+        WebElement LGNButton = mywait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/form[1]/div[3]/button[1]")));
+        LGNButton.click();
 
     }
 }
