@@ -1,8 +1,10 @@
 package LocatorsConcept;
 
+import com.google.common.base.Function;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
@@ -23,7 +25,14 @@ public class Fluentwait {
         driver.get("\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\\\"");
         driver.manage().window().maximize();
 
-        driver.findElement(By.xpath("//input[@placeholder=\"Username\"]"));
-        driver.close();
-    }
+        //driver.findElement(By.xpath("//input[@placeholder=\"Username\"]"));
+
+        // Implementation
+
+        WebElement txtUsername = mywait.until(new Function<WebDriver, WebElement>() {
+            @Override
+            public WebElement apply(WebDriver driver) {
+                return null;
+            }
+        }}
 }
