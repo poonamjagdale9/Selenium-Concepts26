@@ -18,7 +18,7 @@ public class ExplicitWait {
         * we need to use webdriver wait class
         * finding WebElement is inclusive in Explicit wait*/
         WebDriver driver = new ChromeDriver();
-        WebDriverWait mywait = new WebDriverWait(driver, Duration.ofSeconds(5)); // declaration
+        WebDriverWait mywait = new WebDriverWait(driver, Duration.ofSeconds(10)); // declaration
 
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\"");
         driver.manage().window().maximize();
