@@ -28,5 +28,5 @@ public class Fluentwait {
         //driver.findElement(By.xpath("//input[@placeholder=\"Username\"]"));
 
         // Implementation
-        
+
         }}
