@@ -28,11 +28,5 @@ public class Fluentwait {
         //driver.findElement(By.xpath("//input[@placeholder=\"Username\"]"));
 
         // Implementation
-
-        WebElement txtUsername = mywait.until(new Function<WebDriver, WebElement>() {
-            @Override
-            public WebElement apply(WebDriver driver) {
-                return null;
-            }
+        
         }}
-}
