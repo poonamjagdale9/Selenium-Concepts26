@@ -3,8 +3,11 @@ package LocatorsConcept;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
 public class NavigationalCommands {
-    public static void main(String args[]){
+    public static void main(String args[]) throws MalformedURLException {
        /* Navigational commands
        * navigate().to()
        * navigate().back()
@@ -20,6 +23,14 @@ public class NavigationalCommands {
        // driver.get("https://demo.nopcommerce.com/");
         // same we can achieve by using navigate command
 
-        driver.navigate().to("https://demo.nopcommerce.com/");
+        //driver.navigate().to("https://demo.nopcommerce.com/");
+
+        // URL class
+        URL myurl= new URL("\"https://demo.nopcommerce.com/");
+        driver.navigate().to(myurl);
+
+
+
+
     }
 }
