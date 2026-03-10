@@ -26,8 +26,19 @@ public class NavigationalCommands {
         driver.navigate().to("https://demo.nopcommerce.com/"); // this is direct way
 
         // URL class
-      /*  URL myurl= new URL("\"https://demo.nopcommerce.com/"); // this is indirect way
-        driver.navigate().to(myurl); */
+      /*  URL myurl= new URL("\"https://demo.nopcommerce.com/"); // this is indirect way, it will internally call get method only
+        driver.navigate().to(myurl); // this method is from java not from selenium*/
+
+        // Navigate back()
+        driver.navigate().to("https://demo.nopcommerce.com/");
+        driver.navigate().to("https://google.com");
+
+        driver.navigate().back();
+        System.out.println(driver.getCurrentUrl());
+
+        // Navigate to forward
+        driver.navigate().forward();
+        System.out.println(driver.getCurrentUrl());
 
 
 
