@@ -29,7 +29,7 @@ public class NavigationalCommands {
       /*  URL myurl= new URL("\"https://demo.nopcommerce.com/"); // this is indirect way, it will internally call get method only
         driver.navigate().to(myurl); // this method is from java not from selenium*/
 
-        // Navigate back()
+        // Navigate back() // we can use this with single url also
         driver.navigate().to("https://demo.nopcommerce.com/");
         driver.navigate().to("https://google.com");
 
@@ -39,6 +39,9 @@ public class NavigationalCommands {
         // Navigate to forward
         driver.navigate().forward();
         System.out.println(driver.getCurrentUrl());
+
+        // To refresh the page
+        driver.navigate().refresh();
 
 
 
