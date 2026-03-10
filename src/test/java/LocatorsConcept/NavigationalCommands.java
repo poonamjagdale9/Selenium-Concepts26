@@ -23,11 +23,11 @@ public class NavigationalCommands {
        // driver.get("https://demo.nopcommerce.com/");
         // same we can achieve by using navigate command
 
-        //driver.navigate().to("https://demo.nopcommerce.com/");
+        driver.navigate().to("https://demo.nopcommerce.com/"); // this is direct way
 
         // URL class
-        URL myurl= new URL("\"https://demo.nopcommerce.com/");
-        driver.navigate().to(myurl);
+      /*  URL myurl= new URL("\"https://demo.nopcommerce.com/"); // this is indirect way
+        driver.navigate().to(myurl); */
 
 
 
