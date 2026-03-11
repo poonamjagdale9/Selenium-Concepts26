@@ -31,5 +31,12 @@ public class HandleBrowserWindows {
         driver.switchTo().window(childId);
         System.out.println(driver.getTitle());
 
+        // switch back to parent window
+        driver.switchTo().window(parentId);
+        System.out.println("Parent window title :" +driver.getTitle());
+
+        // this is the Usecase for why we need capture the window ids.
+
+
     }
 }
