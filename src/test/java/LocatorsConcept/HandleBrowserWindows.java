@@ -27,5 +27,9 @@ public class HandleBrowserWindows {
 
         System.out.println(driver.getTitle()); // it will return the parent window title, driver is always focused on parent window not child window
 
+        //Switch to child window
+        driver.switchTo().window(childId);
+        System.out.println(driver.getTitle());
+
     }
 }
