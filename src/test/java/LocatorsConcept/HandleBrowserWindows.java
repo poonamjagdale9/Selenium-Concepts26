@@ -17,8 +17,11 @@ public class HandleBrowserWindows {
         driver.manage().window().maximize();
         driver.findElement(By.linkText("Facebook")).click();
 
+
         Set<String> windowIds = driver.getWindowHandles();
-        // convert Set in tolist because set does not have get method to
+
+        //Approch1 only we need to switch between 2 window
+       /* // convert Set in tolist because set does not have get method to
         // so we can not access single window id
         List<String> windowlist = new ArrayList<>(windowIds);
 
@@ -35,7 +38,18 @@ public class HandleBrowserWindows {
         driver.switchTo().window(parentId);
         System.out.println("Parent window title :" +driver.getTitle());
 
-        // this is the Usecase for why we need capture the window ids.
+        // this is the Usecase for why we need capture the window ids.*/
+
+        //Approch2 use when we need to deal with multiple windows - looping statement
+            for(String winID: windowIds){
+                String title= driver.switchTo().window(winID).getTitle();
+              //  System.out.println(driver.getCurrentUrl());
+
+                if (title.equals("NopCommerce"));
+                System.out.println(driver.getCurrentUrl());
+
+            }
+
 
 
     }
