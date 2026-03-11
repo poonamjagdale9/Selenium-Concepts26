@@ -24,6 +24,8 @@ public class HandleBrowserWindows {
 
         String parentId = windowlist.get(0);
         String childId = windowlist.get(1);
-        
+
+        System.out.println(driver.getTitle()); // it will return the parent window title, driver is always focused on parent window not child window
+
     }
 }
