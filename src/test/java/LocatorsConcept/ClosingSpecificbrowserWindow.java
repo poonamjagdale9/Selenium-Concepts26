@@ -15,7 +15,17 @@ public class ClosingSpecificbrowserWindow {
         driver.get("https://demo.nopcommerce.com/");
         driver.manage().window().maximize();
         driver.findElement(By.linkText("Facebook")).click();
-        
+
         Set<String> windowIds = driver.getWindowHandles();
+
+        for (String windwID: windowIds){
+            String title = driver.switchTo().window(windwID).getTitle();
+            System.out.println(title);
+
+            if (title.equals("https://demo.nopcommerce.com/")){
+                driver.close();
+            }
+        }
+
     }
 }
