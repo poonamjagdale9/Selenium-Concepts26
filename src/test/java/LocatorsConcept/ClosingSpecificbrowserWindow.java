@@ -19,11 +19,18 @@ public class ClosingSpecificbrowserWindow {
         Set<String> windowIds = driver.getWindowHandles();
 
         for (String windwID: windowIds){
-            String title = driver.switchTo().window(windwID).getTitle();
+           /* String title = driver.switchTo().window(windwID).getTitle();
             System.out.println(title);
 
             if (title.equals("https://demo.nopcommerce.com/")){
                 driver.close();
+            }*/
+
+            String Url= driver.switchTo().window(windwID).getCurrentUrl();
+
+            if (Url.equals("https://demo.nopcommerce.com/")){
+                driver.close();
+
             }
         }
 
