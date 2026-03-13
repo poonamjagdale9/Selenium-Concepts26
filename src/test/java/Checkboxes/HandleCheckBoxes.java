@@ -18,7 +18,9 @@ public class HandleCheckBoxes {
        System.out.println(status1);
 
        //select specific check box
-       driver.findElement(By.xpath("//input[@id='checkbox1']")).click();
+      driver.findElement(By.xpath("//input[@id='checkbox1']")).click();
+        boolean status2= driver.findElement(By.id("checkbox1")).isSelected();
+        System.out.println(status2);
 
     }
 }
