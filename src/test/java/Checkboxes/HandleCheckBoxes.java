@@ -26,8 +26,11 @@ public class HandleCheckBoxes {
 
         //select multiple check boxes
        List<WebElement> checkboxes= driver.findElements(By.xpath("//input[@class=form-check-input and @type=\"checkbox\"]"));
-        for (int i=0; i<=checkboxes.size();i++){
+      /*  for (int i=0; i<=checkboxes.size();i++){
             checkboxes.get(i).click();
+        }*/
+        for (WebElement checkbx: checkboxes){
+            checkbx.click();
         }
     }
 }
