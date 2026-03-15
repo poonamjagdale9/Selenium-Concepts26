@@ -8,6 +8,7 @@ public class TestClass {
         WebDriver driver= new ChromeDriver();
 
         driver.get("https:www.google.com");
-        driver.get("https:nopecommerce.com");
+
+
     }
 }
