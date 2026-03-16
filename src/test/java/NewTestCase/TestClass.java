@@ -9,7 +9,7 @@ public class TestClass {
         WebDriver driver= new ChromeDriver();
 
         driver.get("https:www.google.com");
-        driver.findElement(By.xpath("//button[@id=L2AGLb]")).click();
+        driver.findElement(By.id("L2AGLb")).click();
         driver.findElement(By.id("APjFqb")).sendKeys("Argoes");
 
 
