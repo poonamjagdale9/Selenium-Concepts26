@@ -11,5 +11,9 @@ public class TestClass {
 
        driver.get("https:www.google.com");
        
+           driver.findElement(By.id("L2AGLb")).click();
+           driver.findElement(By.id("APjFqb")).sendKeys("Argoes");
+
+
    }
 }
