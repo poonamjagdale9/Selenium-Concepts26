@@ -1,6 +1,7 @@
 package NewTestCase;
 
 import org.junit.AfterClass;
+import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -20,11 +21,15 @@ public class LoginTest {
 
     @Test
     void testLogin(){
-
+    LoginPage lp =new LoginPage(driver);
+    lp.setPassword("admin");
+    lp.setPassword("admin123");
+    lp.clickLogin();
+        Assert.assertEquals(driver.getTitle(),"OrangeHRM");
     }
 
     @AfterClass
     void tearDown(){
-
+    driver.close();
     }
 }
